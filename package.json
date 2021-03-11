@@ -4,7 +4,8 @@
         "dev": "mix",
         "watch": "mix watch",
         "staging": "NODE_ENV=staging mix",
-        "prod": "mix --production"
+        "prod": "mix --production",
+        "production": "npm run prod"
     },
     "devDependencies": {
         "docsearch.js": "^2.6.3",
