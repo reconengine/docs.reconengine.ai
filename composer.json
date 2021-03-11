@@ -10,6 +10,6 @@
         }
     },
     "scripts":  {
-        "publish": "./vendor/bin/jigsaw build production && git add build_production -f && git commit -m \"Build for deploy\" && git push origin `git subtree split --prefix build_production master`:gh-pages --force"
+        "publish": "./vendor/bin/jigsaw build production && git add build_production -f && git commit -m \"Build for deploy\" && git subtree push --prefix build_production origin gh-pages"
     }
 }
