@@ -3,4 +3,4 @@
 /vendor/
 /source/assets/build/
 npm-debug.log
-.idea/*
+.idea
