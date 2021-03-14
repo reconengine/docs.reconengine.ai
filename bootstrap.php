@@ -19,3 +19,7 @@ use TightenCo\Jigsaw\Jigsaw;
 
 $events->afterBuild(GenerateSitemap::class);
 
+$events->afterBuild(function (Jigsaw $jigsaw) {
+    $jigsaw->writeOutputFile('CNAME', 'docs.reconengine.ai');
+});
+
