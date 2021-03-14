@@ -1,3 +1,6 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   purge: {
     content: [
@@ -18,12 +21,11 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: [
-          'Nunito Sans'
-        ],
-        mono: [
-          'monospace',
-        ],
+        sans: ['Nunito', ...defaultTheme.fontFamily.sans],
+      },
+      colors: {
+        teal: colors.teal,
+        cyan: colors.cyan,
       },
       lineHeight: {
         normal: '1.6',

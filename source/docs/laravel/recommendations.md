@@ -98,4 +98,4 @@ Exploration is being handled for you.
 
 ## Filters
 
-Filters are currently in closed beta. Feel free to [get in touch](mailto:contact@reconengine.ai) if you would like to incorporate filters into your application.
+Filters are currently in closed beta. Please [get in touch](mailto:contact@reconengine.ai) if you would like to incorporate filters into your application.

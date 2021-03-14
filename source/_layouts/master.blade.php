@@ -31,7 +31,8 @@
             <!-- Insert analytics code here -->
         @endif
 
-        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i" rel="stylesheet">
+    <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
 
         @if ($page->docsearchApiKey && $page->docsearchIndexName)
@@ -39,14 +40,14 @@
         @endif
     </head>
 
-    <body class="flex flex-col justify-between min-h-screen bg-gray-100 text-gray-800 leading-normal font-sans">
-        <header class="flex items-center shadow bg-white border-b h-24 mb-8 py-4" role="banner">
+    <body class="flex flex-col justify-between min-h-screen bg-white text-gray-800 leading-normal font-sans">
+        <header class="flex items-center shadow bg-gray-900 border-b h-24 mb-8 py-4" role="banner">
             <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
                 <div class="flex items-center">
                     <a href="/" title="{{ $page->siteName }} home" class="inline-flex items-center">
                         <img class="h-8 md:h-10 mr-3" src="/assets/img/logo.svg" alt="{{ $page->siteName }} logo" />
 
-                        <h1 class="text-lg md:text-2xl text-blue-900 font-semibold hover:text-blue-600 my-0 pr-4">{{ $page->siteName }}</h1>
+                        <h1 class="text-lg md:text-2xl text-white font-semibold hover:text-gray-300 my-0 pr-4">{{ $page->siteName }}</h1>
                     </a>
                 </div>
 
@@ -68,15 +69,10 @@
 
         @stack('scripts')
 
-        <footer class="bg-white text-center text-sm mt-12 py-4" role="contentinfo">
+        <footer class="bg-gray-900 text-white text-center text-sm mt-12 py-4" role="contentinfo">
             <ul class="flex flex-col md:flex-row justify-center">
                 <li class="md:mr-2">
-                    &copy; <a href="https://tighten.co" title="Tighten website">Tighten</a> {{ date('Y') }}.
-                </li>
-
-                <li>
-                    Built with <a href="http://jigsaw.tighten.co" title="Jigsaw by Tighten">Jigsaw</a>
-                    and <a href="https://tailwindcss.com" title="Tailwind CSS, a utility-first CSS framework">Tailwind CSS</a>.
+                    &copy; <a href="https://reconengine.ai" title="Recon website" class="text-cyan-600 hover:text-cyan-400">Recon</a> {{ date('Y') }}.
                 </li>
             </ul>
         </footer>

@@ -149,7 +149,7 @@ pubic function like(User $user, Post $post)
 
 ## Multiple Database? {#multiple-databases}
 
-When you have more than 1 single Item you want to recommend, you will need a Recon database for each.
+When you have more than 1 item model you want to recommend, you will need a Recon database for each.
 
-Multiple Databases are currently in closed beta. Feel free to [get in touch](mailto:contact@reconengine.ai) if you would like to use multiple databases in your application.
+Multiple Databases are currently in closed beta. Please [get in touch](mailto:contact@reconengine.ai) if you would like to use multiple databases in your application.
 
