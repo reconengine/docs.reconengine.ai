@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="description" content="Configure the Recon Engine to best suite your needs.">
+
+        <meta property="og:site_name" content="Recon - World Class Recommendation Engine for Laravel"/>
+        <meta property="og:title" content="Configuration | Recon - World Class Recommendation Engine for Laravel"/>
+        <meta property="og:description" content="Configure the Recon Engine to best suite your needs."/>
+        <meta property="og:url" content="https://my-jigsaw-docs.com/docs/laravel/configuration"/>
+        <meta property="og:image" content="/assets/img/logo.png"/>
+        <meta property="og:type" content="website"/>
+
+        <meta name="twitter:image:alt" content="Recon - World Class Recommendation Engine for Laravel">
+        <meta name="twitter:card" content="summary_large_image">
+
+        
+        <title>Recon - World Class Recommendation Engine for Laravel | Configuration</title>
+
+        <link rel="home" href="https://my-jigsaw-docs.com">
+        <link rel="icon" href="/favicon.ico">
+
+        
+                    <!-- Insert analytics code here -->
+        
+    <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/assets/build/css/main.css?id=0ac3ffdb1346a7bf14da">
+
+            </head>
+
+    <body class="flex flex-col justify-between min-h-screen bg-white text-gray-800 leading-normal font-sans">
+        <header class="flex items-center shadow bg-gray-900 border-b h-24 mb-8 py-4" role="banner">
+            <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
+                <div class="flex items-center">
+                    <a href="/" title="Recon - World Class Recommendation Engine for Laravel home" class="inline-flex items-center">
+                        <img class="h-8 md:h-10 mr-3" src="/assets/img/logo.svg" alt="Recon - World Class Recommendation Engine for Laravel logo" />
+
+                        <h1 class="text-lg md:text-2xl text-white font-semibold hover:text-gray-300 my-0 pr-4">Recon - World Class Recommendation Engine for Laravel</h1>
+                    </a>
+                </div>
+
+                <div class="flex flex-1 justify-end items-center text-right md:pl-10">
+                                    </div>
+            </div>
+
+                <button class="flex justify-center items-center bg-cyan-500 border border-cyan-500 h-10 mr-4 px-5 rounded-full lg:hidden focus:outline-none"
+    onclick="navMenu.toggle()"
+>
+    <svg id="js-nav-menu-show" xmlns="http://www.w3.org/2000/svg"
+        class="fill-current text-white h-9 w-4" viewBox="0 0 32 32"
+    >
+        <path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/>
+    </svg>
+
+    <svg id="js-nav-menu-hide" xmlns="http://www.w3.org/2000/svg"
+        class="hidden fill-current text-white h-9 w-4" viewBox="0 0 36 30"
+    >
+        <polygon points="32.8,4.4 28.6,0.2 18,10.8 7.4,0.2 3.2,4.4 13.8,15 3.2,25.6 7.4,29.8 18,19.2 28.6,29.8 32.8,25.6 22.2,15 "/>
+    </svg>
+</button>
+
+        </header>
+
+        <main role="main" class="w-full flex-auto">
+            <section class="container max-w-8xl mx-auto px-6 md:px-8 py-4">
+    <div class="flex flex-col lg:flex-row">
+        <nav id="js-nav-menu" class="nav-menu hidden lg:block">
+            <ul class="my-0">
+            <li class="pl-4">
+            
+        <a href="/docs/laravel/introduction"
+            class="lvl0   nav-menu__item hover:text-cyan-500"
+        >
+            Introduction
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/laravel/installation"
+            class="lvl0   nav-menu__item hover:text-cyan-500"
+        >
+            Installation
+        </a>
+    
+            
+        <ul class="my-0">
+            <li class="pl-4">
+            
+        <a href="/docs/laravel/installation#prerequisites"
+            class="lvl1   nav-menu__item hover:text-cyan-500"
+        >
+            Prerequisites
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/laravel/installation#queueing"
+            class="lvl1   nav-menu__item hover:text-cyan-500"
+        >
+            Queueing
+        </a>
+    
+    </li>
+    </ul>
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/laravel/configuration"
+            class="lvl0  active font-semibold text-cyan-500 nav-menu__item hover:text-cyan-500"
+        >
+            Configuration
+        </a>
+    
+            
+        <ul class="my-0">
+            <li class="pl-4">
+            
+        <a href="/docs/laravel/configuration#users-and-items"
+            class="lvl1   nav-menu__item hover:text-cyan-500"
+        >
+            Users &amp; Items
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/laravel/configuration#interactions"
+            class="lvl1   nav-menu__item hover:text-cyan-500"
+        >
+            Interactions
+        </a>
+    
+    </li>
+    </ul>
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/laravel/seeding"
+            class="lvl0   nav-menu__item hover:text-cyan-500"
+        >
+            Seeding
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/laravel/recommendations"
+            class="lvl0   nav-menu__item hover:text-cyan-500"
+        >
+            Getting Recommendations
+        </a>
+    
+    </li>
+    </ul>
+        </nav>
+
+        <div class="DocSearch-content w-full lg:w-3/5 break-words pb-16 lg:pl-4" v-pre>
+            <h1>Configuration</h1>
+
+<p>The Recon Recommendation Engine needs to know about 3 pieces of your application to function:</p>
+
+<ol>
+<li><strong>Users</strong></li>
+<li><strong>Items</strong></li>
+<li><strong>Interactions</strong> between Users and Items</li>
+</ol>
+
+<h2 id="users-and-items">Users &amp; Items</h2>
+
+<p>After installing Recon, add the <code>ReconUser</code> trait to your Users class and add the <code>ReconItem</code>
+trait to the models you want to recommend.</p>
+
+<p>Then implement the abstract method:</p>
+
+<pre><code class="language-php">define(SchemaDefinition $definition)
+</code></pre>
+
+<p>You can use this method to define columns on your models that will help serve better recommendations.</p>
+
+<p>Users can have up to 5 columns defined. Items can have up to 50 columns defined.</p>
+
+<p><strong>You do not need to define all your columns. You should carefully choose the ones you think have the strongest correlation to serve better recommendations.</strong></p>
+
+<blockquote>
+  <p>For <code>ReconItem</code>, the <code>created_at</code> is automatically defined for you. This is <strong>required</strong> for Recon to be able to serve better recommendations. If your items don't have a <code>created_at</code>, please add one.</p>
+</blockquote>
+
+<h3>Datatypes</h3>
+
+<table>
+<thead>
+<tr>
+  <th>Datatype</th>
+  <th>Example</th>
+  <th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>int</td>
+  <td><code>$definition-&gt;int('age');</code></td>
+  <td></td>
+</tr>
+<tr>
+  <td>double</td>
+  <td><code>$definition-&gt;doube('salary');</code></td>
+  <td></td>
+</tr>
+<tr>
+  <td>float</td>
+  <td><code>$definition-&gt;float('average_rating');</code></td>
+  <td></td>
+</tr>
+<tr>
+  <td>long</td>
+  <td><code>$definition-&gt;long('retired_at');</code></td>
+  <td>Use for dates and times.</td>
+</tr>
+<tr>
+  <td>boolean</td>
+  <td><code>$definition-&gt;boolean('is_admin');</code></td>
+  <td></td>
+</tr>
+<tr>
+  <td>string</td>
+  <td><code>$definition-&gt;string('bio');</code></td>
+  <td>Ex: bio, title</td>
+</tr>
+<tr>
+  <td>category</td>
+  <td><code>$definition-&gt;category('gender');</code></td>
+  <td>Ex: gender, color, occupation, city</td>
+</tr>
+</tbody>
+</table>
+
+<h5><strong>Nullable properties?</strong></h5>
+
+<p>Each datatype can also be <code>null</code> by chaining on the <code>-&gt;nullable()</code> method.</p>
+
+<h5><strong>What about dates and times?</strong></h5>
+
+<p>Carbon instances are automatically cast to their timestamp. Therefore, you should use the <code>long</code> datatype when you want to record datetimes.
+Remember to add those columns to your Eloquent <code>$cast</code> property to automatically convert the property to Carbon instances.</p>
+
+<h3>Creating your database</h3>
+
+<p>After your models and properties have been configured, we can now create the database. To do so, run:</p>
+
+<pre><code class="language-bash">php artisan recon
+</code></pre>
+
+<p>You will be prompted to create your first database.</p>
+
+<blockquote>
+  <p>You can override the database name by setting <code>RECON_DATABASE</code> in your .env file. This is useful when you want <a href="#multiple-databases">multiple databases</a>.</p>
+</blockquote>
+
+<p>Selecting <code>yes</code> will read your ReconUser and your ReconItem configuration and setup your recommendation engine. This can take a couple of minutes.</p>
+
+<p>If you need to populate already existing user, item, and interaction data, then see <a href="/docs/laravel/seeding">Seeding</a>.</p>
+
+<h3>Training</h3>
+
+<p>Once you have added the <code>ReconUser</code> and <code>ReconItem</code> trait, all you need to do is <code>save</code> or <code>create</code> a model instance and it will automatically be added to your recommendation engine.
+If you have configured Recon to <a href="/docs/laravel/installation#queueing">use queues</a>, then this operation will be performed in the background by your queue worker.</p>
+
+<pre><code class="language-php">use App\Models\Movie;
+
+$movie = new Movie;
+
+// ...
+
+$movie-&gt;save();
+</code></pre>
+
+<h4>Adding records via Query</h4>
+
+<p>If you would like to add a collection of models to Recon via an Eloquent query, you may chain the <code>trainable</code> method onto the Eloquent query.
+The trainable method will chunk the results of the query and store them in Recon. Again, if you have configured Recon to use queues, all of the chunks will be imported in the background by your queue workers:</p>
+
+<pre><code class="language-php">use App\Models\Movie;
+
+Movie::where('views', '&gt;', 100)-&gt;trainable();
+</code></pre>
+
+<p>If you already have a collection of Eloquent models in memory, you may call the <code>trainable</code> method on the collection instance to add the model instances to their corresponding records:</p>
+
+<pre><code class="language-php">$movies-&gt;trainable();
+</code></pre>
+
+<p><code>trainable</code> also works on a single model instance:</p>
+
+<pre><code class="language-php">$movie-&gt;trainable();
+</code></pre>
+
+<h4>Hiding records</h4>
+
+<p>You can hide certain Users and Items from Recon by implementing the <code>isTrainable</code> method in your model classes.</p>
+
+<pre><code class="language-php">public function isTrainable() {
+    return $this-&gt;views &gt; 100;
+}
+</code></pre>
+
+<h2 id="interactions">Interactions</h2>
+
+<p>The <code>InteractionBuilder</code> class provides a fluent API to record interactions between your users and items. Use this anywhere in your application
+code where interactions are taking place:</p>
+
+<pre><code class="language-php">use Recon\Helpers\InteractionBuilder;
+
+pubic function like(User $user, Post $post)
+{
+    InteractionBuilder::make('like')
+            -&gt;setItemId($post-&gt;id)
+            -&gt;setUserId($user-&gt;id)
+            -&gt;send();
+
+    // ... the rest of your logic
+}
+</code></pre>
+
+<table>
+<thead>
+<tr>
+  <th align="left">Properties</th>
+  <th align="left">Default</th>
+  <th align="left">Required?</th>
+  <th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td align="left">Action</td>
+  <td align="left"><code>null</code></td>
+  <td align="left">Yes</td>
+  <td>The name of the event. The Recon Engine automatically learns the importance.</td>
+</tr>
+<tr>
+  <td align="left">ItemId</td>
+  <td align="left"><code>null</code></td>
+  <td align="left">Yes</td>
+  <td></td>
+</tr>
+<tr>
+  <td align="left">UserId</td>
+  <td align="left"><code>null</code></td>
+  <td align="left">No</td>
+  <td>The session id will automatically be used to associate interactions for users before they have signed-in or created an account.</td>
+</tr>
+<tr>
+  <td align="left">SessionId</td>
+  <td align="left"><code>session()-&gt;getId()</code></td>
+  <td align="left">Yes</td>
+  <td></td>
+</tr>
+<tr>
+  <td align="left">Timestamp</td>
+  <td align="left"><code>now()-&gt;timestamp</code></td>
+  <td align="left">Yes</td>
+  <td></td>
+</tr>
+<tr>
+  <td align="left">Value</td>
+  <td align="left"><code>null</code></td>
+  <td align="left">No</td>
+  <td>Use to associate a value with the event. For example % watched of a movie or total $ spent. The Recon Engine automatically learns how to factor in the <code>Value</code></td>
+</tr>
+<tr>
+  <td align="left">Impressions</td>
+  <td align="left"><code>null</code></td>
+  <td align="left">No</td>
+  <td>An optional array of ItemIds that were displayed to the user at the time of this interaction. This helps Recon serve better recommendations to your users.</td>
+</tr>
+<tr>
+  <td align="left">RecommendationId</td>
+  <td align="left"><code>null</code></td>
+  <td align="left">No</td>
+  <td>The <code>recommendation_id</code> of the GET Recommendation response. This helps Recon serve better recommendations to your users.</td>
+</tr>
+<tr>
+  <td align="left">Metadata</td>
+  <td align="left"><code>null</code></td>
+  <td align="left">No</td>
+  <td>(coming soon) Need more customization? Use the Metadata field that aligns with your Interaction Schema definition.</td>
+</tr>
+</tbody>
+</table>
+
+<blockquote>
+  <p>Machine learning models are trained with new data every 2 hours.</p>
+</blockquote>
+
+<h2 id="multiple-databases">Multiple Database?</h2>
+
+<p>When you have more than 1 item model you want to recommend, you will need a Recon database for each.</p>
+
+<p>Multiple Databases are currently in closed beta. Please <a href="&#109;&#x61;&#105;&#x6c;&#116;&#x6f;&#58;&#x63;o&#110;&#x74;&#97;&#x63;&#116;&#x40;&#114;&#x65;&#99;&#111;&#x6e;&#101;&#x6e;&#103;&#x69;&#110;&#x65;&#46;&#x61;i">get in touch</a> if you would like to use multiple databases in your application.</p>
+        </div>
+    </div>
+</section>
+        </main>
+
+        <script src="/assets/build/js/main.js?id=9f750616394aea4efa00"></script>
+
+        <script>
+    const navMenu = {
+        toggle() {
+            const menu = document.getElementById('js-nav-menu');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('lg:block');
+            document.getElementById('js-nav-menu-hide').classList.toggle('hidden');
+            document.getElementById('js-nav-menu-show').classList.toggle('hidden');
+        },
+    }
+</script>
+
+        <footer class="bg-gray-900 text-white text-center text-sm mt-12 py-4" role="contentinfo">
+            <ul class="flex flex-col md:flex-row justify-center">
+                <li class="md:mr-2">
+                    &copy; <a href="https://reconengine.ai" title="Recon website" class="text-cyan-600 hover:text-cyan-400">Recon</a> 2021.
+                </li>
+            </ul>
+        </footer>
+    </body>
+</html>
