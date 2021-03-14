@@ -19,7 +19,7 @@ php artisan recon
 
 ## Interactions {#interactions}
 
-Interactions cannot automatically be seeded. However, if you have the data available, you can import this data by creating your own Laravel command.
+Interactions cannot automatically be seeded. However, if you have the data available, you can import this data by creating a Laravel command.
 Just send the interaction data like normal using the fluent `InteractionBuilder`:
 
 ```php

@@ -13,7 +13,7 @@ A typical Recon setup involves:
 
 1. Install the package via Composer
 1. Add the `ReconUser` and `ReconItem` traits and implement the required methods to configure your models 
-1. Now that your models are configured, create you recommendation engine
+1. Now that your models are configured, create your recommendation engine
 1. Import your data into your recommendation engine
 1. Serve highly relevant recommendations to your users 
 

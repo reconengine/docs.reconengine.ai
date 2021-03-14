@@ -50,17 +50,12 @@ Each datatype can also be `null` by chaining on the `->nullable()` method.
 
 ##### **What about dates and times?**
 
-Carbon instances are automatically casted to their timestamp. Therefore, you should use the `long` datatype when you want to record datetimes.
-Remember to add those columns to your Eloquent `$cast` property to automatically convert the property to oCarbon instances.
-
-##### **What about dates and times?**
-
-Carbon instances are automatically casted to their timestamp. Therefore, you should use the `long` datatype when you want to record datetimes.
-Remember to add those columns to your Eloquent `$cast` property to automatically convert the property to oCarbon instances.
+Carbon instances are automatically cast to their timestamp. Therefore, you should use the `long` datatype when you want to record datetimes.
+Remember to add those columns to your Eloquent `$cast` property to automatically convert the property to Carbon instances.
 
 ### Creating your database
 
-After your models and properties have been configured, we can now create the database. To do so, simple run:
+After your models and properties have been configured, we can now create the database. To do so, run:
 
 ```bash
 php artisan recon
@@ -68,16 +63,16 @@ php artisan recon
 
 You will be prompted to create your first database.
 
-> You can override the database name by setting `RECON_DATABASE` in your .env file. This is useful for when you want [multiple databases](#multiple-databases).
+> You can override the database name by setting `RECON_DATABASE` in your .env file. This is useful when you want [multiple databases](#multiple-databases).
 
-Selecting yes will read your ReconUser configuration and your ReconItem configuration and setup your database structure in Recon. This can take a couple of minutes.
+Selecting `yes` will read your ReconUser and your ReconItem configuration and setup your recommendation engine. This can take a couple of minutes.
 
 If you need to populate already existing user, item, and interaction data, then see [Seeding](/docs/laravel/seeding).
 
 ### Training
 
 Once you have added the `ReconUser` and `ReconItem` trait, all you need to do is `save` or `create` a model instance and it will automatically be added to your recommendation engine.
-If you have configured Recon to [use queues](/docs/laravel/installation#queues), then this operation will be performed in the background by your queue worker.
+If you have configured Recon to [use queues](/docs/laravel/installation#queueing), then this operation will be performed in the background by your queue worker.
 
 ```php
 use App\Models\Movie;
@@ -91,7 +86,7 @@ $movie->save();
 
 #### Adding records via Query
 
-If you would like to add a collection of models to Recon via an Eloquent query, you main chain the `trainable` method onto the Eloquent query.
+If you would like to add a collection of models to Recon via an Eloquent query, you may chain the `trainable` method onto the Eloquent query.
 The trainable method will chunk the results of the query and store them in Recon. Again, if you have configured Recon to use queues, all of the chunks will be imported in the background by your queue workers:
 
 ```php
@@ -104,6 +99,12 @@ If you already have a collection of Eloquent models in memory, you may call the 
 
 ```php
 $movies->trainable();
+```
+
+`trainable` also works on a single model instance:
+
+```php
+$movie->trainable();
 ```
 
 #### Hiding records
@@ -146,6 +147,8 @@ pubic function like(User $user, Post $post)
 | Impressions | `null` | No | An optional array of ItemIds that were displayed to the user at the time of this interaction. This helps Recon serve better recommendations to your users. |
 | RecommendationId | `null` | No | The `recommendation_id` of the GET Recommendation response. This helps Recon serve better recommendations to your users. |
 | Metadata | `null` | No | (coming soon) Need more customization? Use the Metadata field that aligns with your Interaction Schema definition. |
+
+> Machine learning models are trained with new data every 2 hours.
 
 ## Multiple Database? {#multiple-databases}
 

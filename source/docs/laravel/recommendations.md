@@ -9,7 +9,7 @@ section: content
 
 ## Prerequisites
 
-Before Recon can serve recommendations it needs at least:
+Before Recon can serve recommendations it needs:
 
 1. At least 1,000 Interactions
 2. At least 25 Users, with 2 or more Interactions each
@@ -21,13 +21,13 @@ A Business Solution is a particular recommendation campaign you want to use with
 ##### **Personalized User Recommendations**
 
 The Personalized User Recommendations algorithm is optimized for all personalized recommendation scenarios.
-It predicts the items that a user is most likely to interact with based on Interactions, Items, and Users data. When recommending items, it uses [automatic item exploration](#automatic-item-exploration).
+It predicts the items that a user is most likely to interact with based on Interaction, Item, and User data. When recommending items, it uses [automatic item exploration](#automatic-item-exploration).
 
 ##### **Related Items**
 
 The Related Items algorithm will recommend Items most similar to each other based on similar interaction data. When there is insufficient interaction data, popular items will be recommended.
 
-> Right now, you are allowed 1 of each type per account. You can create them in the Recon [dashboard](https://reconengine.ai/dashboard).
+> Right now, you are allowed 1 Business Solution of each type per account. You can create them in the Recon [dashboard](https://reconengine.ai/dashboard).
 
 ## Recommendations
 
@@ -85,7 +85,7 @@ You can use the `recommendation_id` in future `InteractionBuilder` [requests](/d
 
 When there is very little historical interaction data about a User or Item, serving recommendations is very difficult. These are referred to as Cold Starts.
 
-The Recon recommendation algorithms were carefully designed to serve high quality recommendations even when there is little historic information available for new items and users.
+The Recon recommendation algorithms were carefully designed to serve high-quality recommendations even when there is little historic information available for new items and users.
 
 [Automatic Item Exploration](#automatic-item-exploration) is one of the best ways to minimize the cold start problem in recommendation engines. 
 

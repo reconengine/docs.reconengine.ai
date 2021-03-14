@@ -19,13 +19,19 @@ First, install Recon via the Composer package:
 composer require reconengine/laravel-recon
 ```
 
+After installing Recon, you should publish the Recon configuration file using the `vendor:publish` Artisan command. This command will publish the `recon.php` configuration file to your application's `config` directory:
+
+```
+php artisan vendor:publish --provider="Recon\ReconServiceProvider"
+```
+
 Next, we need to get an API token over at [reconengine.ai](https://reconengine.ai/user/api-tokens) and add it to our `.env` file:
 
 ```env
 RECON_TOKEN={token}
 ```
 
-You are now ready to start interaction with the Recon API in your application.
+You are now ready to start using the Recon API in your application.
 
 ## Queueing {#queueing}
  
