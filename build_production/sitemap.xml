@@ -2,32 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
  <url>
   <loc>https://my-jigsaw-docs.com</loc>
-  <lastmod>2021-03-14T22:17:23+00:00</lastmod>
+  <lastmod>2021-03-14T22:17:57+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://my-jigsaw-docs.com/docs/laravel/introduction</loc>
-  <lastmod>2021-03-14T22:17:23+00:00</lastmod>
+  <lastmod>2021-03-14T22:17:57+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://my-jigsaw-docs.com/docs/laravel/configuration</loc>
-  <lastmod>2021-03-14T22:17:23+00:00</lastmod>
+  <lastmod>2021-03-14T22:17:57+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://my-jigsaw-docs.com/docs/laravel/seeding</loc>
-  <lastmod>2021-03-14T22:17:23+00:00</lastmod>
+  <lastmod>2021-03-14T22:17:57+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://my-jigsaw-docs.com/docs/laravel/installation</loc>
-  <lastmod>2021-03-14T22:17:23+00:00</lastmod>
+  <lastmod>2021-03-14T22:17:57+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://my-jigsaw-docs.com/docs/laravel/recommendations</loc>
-  <lastmod>2021-03-14T22:17:23+00:00</lastmod>
+  <lastmod>2021-03-14T22:17:57+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
 </urlset>
