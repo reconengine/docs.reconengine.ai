@@ -27,7 +27,7 @@
         
     <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="/assets/build/css/main.css?id=49bce7c368c81d19eaef">
+        <link rel="stylesheet" href="/assets/build/css/main.css?id=0ac3ffdb1346a7bf14da">
 
             </head>
 
@@ -180,6 +180,7 @@ Just send the interaction data like normal using the fluent <code>InteractionBui
 
 foreach ($likes as $like) {
     InteractionBuilder::make('like')
+        -&gt;setClientId($like-&gt;id)
         -&gt;setItemId($like-&gt;post_id)
         -&gt;setUserId($like-&gt;user_id)
         -&gt;setTimestamp($like-&gt;created_at)
@@ -189,6 +190,12 @@ foreach ($likes as $like) {
 
 <blockquote>
   <p>When importing interaction data, it is important to specify the <code>-&gt;setTimestamp()</code> method. By default, the current timestamp is used. When importing historic data, you should use the time that the event occurred.</p>
+</blockquote>
+
+<p>To speed up your import process, you can batch up to 250 InteractionsBuilder instances at a time and send them at once using <code>InteractionBuilder::sendBatch($interactions);</code></p>
+
+<blockquote>
+  <p>If possible, use <code>-&gt;setClientId()</code> to set an identifier for each interaction. This allows you to re-import interactions without needing to worry about duplicates.</p>
 </blockquote>
         </div>
     </div>

@@ -27,7 +27,7 @@
         
     <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="/assets/build/css/main.css?id=49bce7c368c81d19eaef">
+        <link rel="stylesheet" href="/assets/build/css/main.css?id=0ac3ffdb1346a7bf14da">
 
             </head>
 
@@ -338,21 +338,27 @@ pubic function like(User $user, Post $post)
 <tbody>
 <tr>
   <td align="left">Action</td>
-  <td align="left"><code>null</code></td>
+  <td align="left"></td>
   <td align="left">Yes</td>
   <td>The name of the event. The Recon Engine automatically learns the importance.</td>
 </tr>
 <tr>
   <td align="left">ItemId</td>
-  <td align="left"><code>null</code></td>
+  <td align="left"></td>
   <td align="left">Yes</td>
   <td></td>
 </tr>
 <tr>
   <td align="left">UserId</td>
+  <td align="left"></td>
+  <td align="left">Yes</td>
+  <td>The session id will automatically be used to associate interactions for users before they have signed-in or created an account.</td>
+</tr>
+<tr>
+  <td align="left">ClientId</td>
   <td align="left"><code>null</code></td>
   <td align="left">No</td>
-  <td>The session id will automatically be used to associate interactions for users before they have signed-in or created an account.</td>
+  <td><strong>Recommended.</strong> An identifier for this interaction. This is used internally by Recon to prevent duplicate interactions if you record an interaction more than once.</td>
 </tr>
 <tr>
   <td align="left">SessionId</td>
