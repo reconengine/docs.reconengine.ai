@@ -27,6 +27,7 @@ $likes = Likes::all();
 
 foreach ($likes as $like) {
     InteractionBuilder::make('like')
+        ->setClientId($like->id)
         ->setItemId($like->post_id)
         ->setUserId($like->user_id)
         ->setTimestamp($like->created_at)
@@ -36,4 +37,6 @@ foreach ($likes as $like) {
 
 > When importing interaction data, it is important to specify the `->setTimestamp()` method. By default, the current timestamp is used. When importing historic data, you should use the time that the event occurred.
 
+To speed up your import process, you can batch up to 250 InteractionsBuilder instances at a time and send them at once using `InteractionBuilder::sendBatch($interactions);`
 
+> If possible, use `->setClientId()` to set an identifier for each interaction. This allows you to re-import interactions without needing to worry about duplicates.

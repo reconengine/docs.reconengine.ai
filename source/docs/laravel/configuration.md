@@ -138,9 +138,10 @@ pubic function like(User $user, Post $post)
 
 | Properties | Default | Required? | Notes |
 | :---------- | :------- | :--------- | ----- |
-| Action | `null` | Yes | The name of the event. The Recon Engine automatically learns the importance. |
-| ItemId | `null` | Yes | |
-| UserId | `null` | No | The session id will automatically be used to associate interactions for users before they have signed-in or created an account. |
+| Action | | Yes | The name of the event. The Recon Engine automatically learns the importance. |
+| ItemId | | Yes | |
+| UserId | | Yes | The session id will automatically be used to associate interactions for users before they have signed-in or created an account. |
+| ClientId | `null` | No | **Recommended.** An identifier for this interaction. This is used internally by Recon to prevent duplicate interactions if you record an interaction more than once. |
 | SessionId | `session()->getId()` | Yes | |
 | Timestamp | `now()->timestamp` | Yes | |
 | Value | `null` | No | Use to associate a value with the event. For example % watched of a movie or total $ spent. The Recon Engine automatically learns how to factor in the `Value` |
