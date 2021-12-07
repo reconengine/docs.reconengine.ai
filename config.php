@@ -6,7 +6,7 @@ return [
     'baseUrl' => 'https://docs.reconengine.ai',
     'production' => false,
     'siteName' => 'Recon - World Class Recommendation Engine for Laravel',
-    'siteDescription' => 'Recon is a recommendation engine as a service with an intuitive API. Built on the same foundation powering Amazon.com',
+    'siteDescription' => 'Recon is a recommendation engine as a service with an intuitive API. Built on the same foundation powering Amazon.com.',
 
     // Algolia DocSearch credentials
     'docsearchApiKey' => '',
